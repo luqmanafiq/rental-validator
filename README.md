@@ -19,5 +19,21 @@ A hackathon project to validate rental machinery return photos and detect damage
 - **Validation**: Upload 5 JCB photos (e.g., excavator, loader) to see suitability results.
 - **Damage**: Compare before/after pairs to highlight damage.
 - **Feedback**: Correct uncertain predictions to improve the model.
+Users can provide feedback via “Correct”/“Incorrect” buttons for uncertain photos (confidence < 0.7), logged in `feedback.csv` (e.g., `photo_1,True`, `photo_4,True`).
 
-![image](https://github.com/user-attachments/assets/b12b9314-6c3b-4d54-b808-5f64d91210cc)
+
+## Validation Results (Example)
+Button to validate Correct/Incorrect to images
+- **Left**: Suitable: Yes (Confidence: 0.82) – Clear, correct left-side view.
+- **Right**: Suitable: No (Confidence: 0.68) – Flagged for human review (feedback needed).
+- **Front**: Suitable: Yes (Confidence: 0.90) – Clear, frontal view.
+- **Back**: Suitable: Yes (Confidence: 0.78) – Clear, rear view.
+- **Fuel Gauge**: Suitable: No (Confidence: 0.58) – Flagged for human review (feedback needed).
+
+## Tech Stack
+- **Back-End**: Python, Flask, PyTorch, OpenCV
+- **Front-End**: JavaScript, HTML, CSS
+
+Damage Highlight:
+![image](https://github.com/user-attachments/assets/610b1521-8d59-445e-9ce2-a91fa0307b30)
+
