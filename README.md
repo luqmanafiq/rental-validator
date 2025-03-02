@@ -20,4 +20,4 @@ A hackathon project to validate rental machinery return photos and detect damage
 - **Damage**: Compare before/after pairs to highlight damage.
 - **Feedback**: Correct uncertain predictions to improve the model.
 
-![Screenshot](![image](https://github.com/user-attachments/assets/86f289d1-f251-4d71-9b88-20b46730b5d9))
+![image](https://github.com/user-attachments/assets/b12b9314-6c3b-4d54-b808-5f64d91210cc)
