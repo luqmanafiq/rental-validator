@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Photo Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rental Photo Validator</h1>
+        <p>Upload 5 photos of JCB machinery to validate suitability.</p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label>Left Side: <input type="file" name="photo_0" accept="image/*" required></label>
+            <label>Right Side: <input type="file" name="photo_1" accept="image/*" required></label>
+            <label>Front: <input type="file" name="photo_2" accept="image/*" required></label>
+            <label>Back: <input type="file" name="photo_3" accept="image/*" required></label>
+            <label>Fuel Gauge: <input type="file" name="photo_4" accept="image/*" required></label>
+            <button type="submit">Validate Photos</button>
+        </form>
+        <div id="results"></div>
+        <h2>Damage Detection</h2>
+        <form id="damageForm" enctype="multipart/form-data">
+            <label>Before: <input type="file" name="before" accept="image/*" required></label>
+            <label>After: <input type="file" name="after" accept="image/*" required></label>
+            <button type="submit">Detect Damage</button>
+        </form>
+        <div id="damageResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
