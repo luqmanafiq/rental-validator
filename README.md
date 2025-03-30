@@ -65,7 +65,7 @@ For uncertain predictions (confidence < 0.7):
 - Responsive design with minimal dependencies
 
 ## Hackathon Results
-- **Completed in**: 24 hours
+- **Completed in**: 6 days
 - **Team members**: Me
 - **Awards/Recognition**: Participation (Only winner are announced)
 
